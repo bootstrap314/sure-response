@@ -195,10 +195,8 @@ docker-compose kill && docker-compose rm
 ### Questions
 1. Where should we run this script? 
   - This script should be deployed as a Lambda function with scheduled execution (either containerized or naive Python) or run as a reoccuring job on a production Kubernetes cluster.  Either of these mechanisms will be more robust than leveraging cron on a single Linux machine. 
-
-  In the case of deploying on AWS, Terraform, Cloudformation, or similar level of abstraction deployment tool should be utilized. 
-
-  For Kubernetes simply K8s yaml should suffice given the simplicity of the tool. 
+  - In the case of deploying on AWS, Terraform, Cloudformation, or similar level of abstraction deployment tool should be utilized. For
+  - Kubernetes simply K8s yaml should suffice given the simplicity of the tool. 
 
 2. How should we test the script before running it production?
  - See ##Testing
