@@ -17,9 +17,10 @@ class TestDepcleaner(unittest.TestCase):
         client = boto3.client('s3', endpoint_url=endpoint_url)
     else:
         client = boto3.client('s3')
-
+    # Note: the setUpClass will not create the bucket for you.
+    # Bucket creation is handled in the provided docker-compose.yaml file for testing with localstack.
     bucket = 'will-test123'
-        # Fixed prefix
+    # All mock deployments will start with the word "deploy"
     prefix = "deploy"
     test_deployment_count = 12
     deployments_to_keep = 5
