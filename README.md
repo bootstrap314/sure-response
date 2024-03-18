@@ -158,27 +158,29 @@ If tests are succesfull you should see an output similar to:
 
 ```bash
  docker-compose run depcleaner-test-runner
+ ...
 [+] Creating 2/0
- ✔ Container sure-localstack-1       Running                                                                                                    0.0s 
- ✔ Container sure-setup-assistant-1  Created                                                                                                    0.0s 
-[+] Running 1/0
- ✔ Container sure-setup-assistant-1  Started                                                                                                    0.1s 
+ ✔ Container sure-will-turner-localstack-1       Created                                                            0.0s
+ ✔ Container sure-will-turner-setup-assistant-1  Created                                                            0.0s
+[+] Running 2/2
+ ✔ Container sure-will-turner-localstack-1       Healthy                                                           12.1s
+ ✔ Container sure-will-turner-setup-assistant-1  Started                                                            0.1s
 Setting up test environment with 12 mock deployments...
-Populating mock deployment:deploybLNv9S7RxXiIYb
-Populating mock deployment:deployGyfvdwlEM7MrgE
-Populating mock deployment:deploycY3EMT8MRS2U30
-Populating mock deployment:deployZStx5gC6fjRFKD
-Populating mock deployment:deployxt55tgEwvJuidh
-Populating mock deployment:deployuBBFFrbT5PRpoz
-Populating mock deployment:deployG8MQySfPngpzFT
-Populating mock deployment:deployHc5V2TzWBB5TCQ
-Populating mock deployment:deployoGnhA7LDuc9IXU
-Populating mock deployment:deploy7BdNFMOLwwDexV
-Populating mock deployment:deployEnFkchfrT3wQ0W
-Populating mock deployment:deployFV5pWJOozk6YN5
+Populating mock deployment:deployZNVsYv43WKiftl
+Populating mock deployment:deploy0mH9Sdg5psc8aH
+Populating mock deployment:deployIAJR8RIQy8K2HN
+Populating mock deployment:deployeT3xyvZapRyRd6
+Populating mock deployment:deployRsY5cTy5hlMVDt
+Populating mock deployment:deploytoE4LFaCWOAG67
+Populating mock deployment:deployvU1OBrbgRGw1kb
+Populating mock deployment:deploy066umDCKkKqdiA
+Populating mock deployment:deployJsuWNwj3gnBFYd
+Populating mock deployment:deployUEKpsLAiHVEOJF
+Populating mock deployment:deploybWfjgwebJYsrJI
+Populating mock deployment:deployzOUWxzNjPamEJi
 ..
 ----------------------------------------------------------------------
-Ran 2 tests in 39.648s
+Ran 2 tests in 39.588s
 
 OK
 ```
